@@ -7,17 +7,50 @@
 //
 
 #import "IXAppDelegate.h"
-
-#import "IXViewController.h"
+#import "IXDefinitionViewController.h"
+#import "IXWordsTableViewController.h"
+#import "IXWordsModel.h"
 
 @implementation IXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.viewController = [[IXViewController alloc] initWithNibName:@"IXViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    // Creamos el Modelo
+    
+    IXWordsModel *wordsModel = [[IXWordsModel alloc] init];
+    
+    // Creamos los controladores
+    
+    IXDefinitionViewController *wordDefinitionVC = [[IXDefinitionViewController alloc] initWithModel:[wordsModel wordAtIndex:0 inLetterAtIndex:0]];
+    
+    IXWordsTableViewController *wordsTableVC = [[IXWordsTableViewController alloc] initWithModel:wordsModel tableStyle:UITableViewStyleGrouped];
+    
+    
+    // Creamos los navegadores
+    
+    UINavigationController *wordDefinitionNC = [[UINavigationController alloc] init];
+    [wordDefinitionNC pushViewController:wordDefinitionVC animated:NO];
+    
+    UINavigationController *wordsTableNC = [[UINavigationController alloc] init];
+    [wordsTableNC pushViewController:wordsTableVC animated:NO];
+    
+    // Creamos el combinador
+    
+    UISplitViewController *splitVC = [[UISplitViewController alloc] init];
+    [splitVC setViewControllers:@[wordsTableNC, wordDefinitionNC]];
+    
+    
+    // Asignamos los delegados
+     
+    splitVC.delegate = wordDefinitionVC;
+    wordsTableVC.delegate = wordDefinitionVC;
+    
+    
+    // Indicamos el controlador raíz
+    
+    self.window.rootViewController = splitVC;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -8,12 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@class IXViewController;
+@class IXWordsModel, IXWordsTableViewController, IXDefinitionViewController;
 
 @interface IXAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) IXViewController *viewController;
+@property (strong, nonatomic) IXWordsModel *wordsModel;
+@property (strong, nonatomic) IXDefinitionViewController *wordDefinitionVC;
+@property (strong, nonatomic) IXWordsTableViewController *wordsTableVC;
+@property (strong, nonatomic) UINavigationController *wordsTableNC;
+@property (weak, nonatomic) id delegate;
 
 @end

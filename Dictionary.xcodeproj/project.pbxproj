@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B737AD016B7E3E5008B3FA1 /* IXDefinitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B737ACE16B7E3E5008B3FA1 /* IXDefinitionViewController.m */; };
+		3B737AD116B7E3E5008B3FA1 /* IXDefinitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B737ACF16B7E3E5008B3FA1 /* IXDefinitionViewController.xib */; };
 		3BF270D416B6F8E000A5E049 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF270D316B6F8E000A5E049 /* UIKit.framework */; };
 		3BF270D616B6F8E000A5E049 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF270D516B6F8E000A5E049 /* Foundation.framework */; };
 		3BF270D816B6F8E000A5E049 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF270D716B6F8E000A5E049 /* CoreGraphics.framework */; };
@@ -16,11 +18,16 @@
 		3BF270E616B6F8E000A5E049 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BF270E516B6F8E000A5E049 /* Default.png */; };
 		3BF270E816B6F8E000A5E049 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BF270E716B6F8E000A5E049 /* Default@2x.png */; };
 		3BF270EA16B6F8E000A5E049 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BF270E916B6F8E000A5E049 /* Default-568h@2x.png */; };
-		3BF270ED16B6F8E000A5E049 /* IXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF270EC16B6F8E000A5E049 /* IXViewController.m */; };
-		3BF270F016B6F8E000A5E049 /* IXViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BF270EE16B6F8E000A5E049 /* IXViewController.xib */; };
+		3BF270FB16B6FB2500A5E049 /* vocabwords1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3BF270FA16B6FB2500A5E049 /* vocabwords1.txt */; };
+		3BF270FF16B6FBDE00A5E049 /* IXWordsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF270FE16B6FBDE00A5E049 /* IXWordsModel.m */; };
+		3BF2710216B6FC0D00A5E049 /* IXWordsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2710116B6FC0D00A5E049 /* IXWordsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B370F9716B7F12700705684 /* IXWordsTableViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IXWordsTableViewControllerDelegate.h; sourceTree = "<group>"; };
+		3B737ACD16B7E3E5008B3FA1 /* IXDefinitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXDefinitionViewController.h; sourceTree = "<group>"; };
+		3B737ACE16B7E3E5008B3FA1 /* IXDefinitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IXDefinitionViewController.m; sourceTree = "<group>"; };
+		3B737ACF16B7E3E5008B3FA1 /* IXDefinitionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IXDefinitionViewController.xib; sourceTree = "<group>"; };
 		3BF270CF16B6F8E000A5E049 /* Dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF270D316B6F8E000A5E049 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3BF270D516B6F8E000A5E049 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -34,9 +41,11 @@
 		3BF270E516B6F8E000A5E049 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3BF270E716B6F8E000A5E049 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3BF270E916B6F8E000A5E049 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		3BF270EB16B6F8E000A5E049 /* IXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IXViewController.h; sourceTree = "<group>"; };
-		3BF270EC16B6F8E000A5E049 /* IXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IXViewController.m; sourceTree = "<group>"; };
-		3BF270EF16B6F8E000A5E049 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/IXViewController.xib; sourceTree = "<group>"; };
+		3BF270FA16B6FB2500A5E049 /* vocabwords1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vocabwords1.txt; sourceTree = "<group>"; };
+		3BF270FD16B6FBDE00A5E049 /* IXWordsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXWordsModel.h; sourceTree = "<group>"; };
+		3BF270FE16B6FBDE00A5E049 /* IXWordsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IXWordsModel.m; sourceTree = "<group>"; };
+		3BF2710016B6FC0D00A5E049 /* IXWordsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IXWordsTableViewController.h; sourceTree = "<group>"; };
+		3BF2710116B6FC0D00A5E049 /* IXWordsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IXWordsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +62,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B370F9816B7F12D00705684 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3B370F9716B7F12700705684 /* IXWordsTableViewControllerDelegate.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		3B737AD216B7E3F4008B3FA1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B737AD416B7E415008B3FA1 /* Table Controller */,
+				3B737AD516B7E426008B3FA1 /* Definition Controller */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3B737AD316B7E401008B3FA1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3BF270FD16B6FBDE00A5E049 /* IXWordsModel.h */,
+				3BF270FE16B6FBDE00A5E049 /* IXWordsModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3B737AD416B7E415008B3FA1 /* Table Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3BF2710016B6FC0D00A5E049 /* IXWordsTableViewController.h */,
+				3BF2710116B6FC0D00A5E049 /* IXWordsTableViewController.m */,
+			);
+			name = "Table Controller";
+			sourceTree = "<group>";
+		};
+		3B737AD516B7E426008B3FA1 /* Definition Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B737ACD16B7E3E5008B3FA1 /* IXDefinitionViewController.h */,
+				3B737ACE16B7E3E5008B3FA1 /* IXDefinitionViewController.m */,
+				3B737ACF16B7E3E5008B3FA1 /* IXDefinitionViewController.xib */,
+			);
+			name = "Definition Controller";
+			sourceTree = "<group>";
+		};
 		3BF270C416B6F8E000A5E049 = {
 			isa = PBXGroup;
 			children = (
@@ -85,9 +139,10 @@
 			children = (
 				3BF270E216B6F8E000A5E049 /* IXAppDelegate.h */,
 				3BF270E316B6F8E000A5E049 /* IXAppDelegate.m */,
-				3BF270EB16B6F8E000A5E049 /* IXViewController.h */,
-				3BF270EC16B6F8E000A5E049 /* IXViewController.m */,
-				3BF270EE16B6F8E000A5E049 /* IXViewController.xib */,
+				3B370F9816B7F12D00705684 /* Protocols */,
+				3B737AD316B7E401008B3FA1 /* Models */,
+				3B737AD216B7E3F4008B3FA1 /* Controllers */,
+				3BF270FA16B6FB2500A5E049 /* vocabwords1.txt */,
 				3BF270DA16B6F8E000A5E049 /* Supporting Files */,
 			);
 			path = Dictionary;
@@ -163,7 +218,8 @@
 				3BF270E616B6F8E000A5E049 /* Default.png in Resources */,
 				3BF270E816B6F8E000A5E049 /* Default@2x.png in Resources */,
 				3BF270EA16B6F8E000A5E049 /* Default-568h@2x.png in Resources */,
-				3BF270F016B6F8E000A5E049 /* IXViewController.xib in Resources */,
+				3BF270FB16B6FB2500A5E049 /* vocabwords1.txt in Resources */,
+				3B737AD116B7E3E5008B3FA1 /* IXDefinitionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +232,9 @@
 			files = (
 				3BF270E016B6F8E000A5E049 /* main.m in Sources */,
 				3BF270E416B6F8E000A5E049 /* IXAppDelegate.m in Sources */,
-				3BF270ED16B6F8E000A5E049 /* IXViewController.m in Sources */,
+				3BF270FF16B6FBDE00A5E049 /* IXWordsModel.m in Sources */,
+				3BF2710216B6FC0D00A5E049 /* IXWordsTableViewController.m in Sources */,
+				3B737AD016B7E3E5008B3FA1 /* IXDefinitionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,14 +247,6 @@
 				3BF270DD16B6F8E000A5E049 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		3BF270EE16B6F8E000A5E049 /* IXViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3BF270EF16B6F8E000A5E049 /* en */,
-			);
-			name = IXViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -295,6 +345,7 @@
 				3BF270F516B6F8E000A5E049 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
